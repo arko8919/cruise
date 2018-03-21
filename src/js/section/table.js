@@ -20,17 +20,14 @@ export class Table extends React.Component {
                         <td>{this.props.sheet[sheetIndex][1]}</td>
                         <td>{this.props.sheet[sheetIndex][2]}</td>
                         <td>{this.props.sheet[sheetIndex][3]}</td>
-                        <td>{this.props.sheet[sheetIndex][4]}</td>
                         <td>{this.props.sheet[sheetIndex][6]}</td>
                     </tr>);
             }
         }
-
-        this.setState( {
+        this.setState({
             tripData: tempValue
         })
     }
-
 
     render() {
         return (
@@ -40,7 +37,6 @@ export class Table extends React.Component {
                     <th>Offer name</th>
                     <th>Departure Date</th>
                     <th>Itinerary</th>
-                    <th>Cruise Line Name</th>
                     <th>Cruise Ship Name</th>
                 </tr>
                 </thead>

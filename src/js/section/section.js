@@ -18,7 +18,6 @@ export class Section extends React.Component {
         req.open("GET", url, true);
         req.responseType = "arraybuffer";
 
-
         req.onload = function (e) {
             const data = new Uint8Array(req.response);
             const workbook = XLSX.read(data, {type: "array"});
@@ -42,7 +41,7 @@ export class Section extends React.Component {
                 <h2>Cruise Lines</h2>
                 <p>Choose you favorite cruise line to begin a journey!!!</p>
                 <div className="info">
-                    <i className="mdi mdi-chevron-down"></i>
+                    <i className="mdi mdi-chevron-down"> </i>
                 </div>
                 <div className="container">
                     <Content sheet={this.state.sheet}/>

@@ -26,9 +26,12 @@ export class Content extends React.Component {
 
         return (
             cruiseLines.map(cruiseLine =>
-                <div className="content" key={cruiseLine}>
+                <div className="content"
+                     key={cruiseLine}
+                >
                     <img src={require(`./cruise-line-logos/${cruiseLine}`)}
-                         alt={cruiseLine}/>
+                         alt={cruiseLine}
+                    />
                     <div className="overlay">
                         <Table sheet={this.props.sheet}
                                cruiseLineName={cruiseLine}/>

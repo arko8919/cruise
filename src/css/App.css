@@ -1,6 +1,5 @@
 /* Colors */
 /* odd */
-/* even */
 /* Fonts */
 /* Fonts-size */
 section .info i {
@@ -27,14 +26,16 @@ section .container .content .overlay {
   right: 0;
   width: 100%;
   height: 0;
-  background-color: #F5F5F5;
+  background-color: #ADD9F4;
   opacity: 0;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
   overflow-y: auto;
-  overflow-x: hidden; }
+  overflow-x: auto; }
+  section .container .content .overlay table {
+    max-width: 100%; }
   section .container .content .overlay table, section .container .content .overlay th, section .container .content .overlay td {
     border: 1px solid #476C9B;
     border-collapse: collapse;
@@ -118,6 +119,7 @@ section {
       -o-animation-iteration-count: infinite;
       animation-iteration-count: infinite; }
   section .container {
+    margin: 5px;
     width: 100%;
     -webkit-flex-flow: column nowrap;
     flex-flow: column nowrap;
@@ -132,16 +134,14 @@ section {
     section .container .content {
       cursor: pointer;
       position: relative;
-      margin: 5px;
-      box-shadow: 0 0 2px #616161;
-      min-width: 45%;
+      margin: 5px 0;
+      box-shadow: 0 0 2px grey;
+      width: 100%;
       /* Overlay on image */ }
-      @media only screen and (min-width: 321px) {
-        section .container .content {
-          min-width: 95%; } }
       @media only screen and (min-width: 768px) {
         section .container .content {
-          margin: 10px; } }
+          width: 45%;
+          margin: 5px; } }
       section .container .content:hover {
         box-shadow: 1px 1px 4px #000; }
       section .container .content img {
@@ -153,13 +153,13 @@ header {
   -webkit-justify-content: center;
   justify-content: center; }
   header h1 {
+    font-family: "Roboto Mono", monospace;
     color: #25408E;
     font-size: 2em; }
 
 footer {
   padding: 40px 20px;
   background-color: #ADD9F4;
-  font-size: 14px;
   -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;
   -webkit-align-items: center;
@@ -189,10 +189,11 @@ footer {
     text-transform: uppercase;
     font-family: "Roboto Mono", monospace; }
     footer p span {
-      color: black; }
+      color: #000; }
 
 body, header, section, footer {
-  font-size: 14px; }
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif; }
   @media only screen and (min-width: 321px) and (min-height: 321px) {
     body, header, section, footer {
       font-size: 18px; } }

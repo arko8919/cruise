@@ -8,6 +8,7 @@
 
 body, header, section, footer {
   font-size: 14px;
+  font-family: $standard-font;
 
   @media only screen and (min-width: 321px) and (min-height: 321px) {
     font-size: 18px;
@@ -24,6 +25,4 @@ body, header, section, footer {
   @media only screen and (min-width: 1224px) {
     font-size: 30px;
   }
-
-
 }

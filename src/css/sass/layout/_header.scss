@@ -4,6 +4,7 @@ header {
   @include justify-content(center);
 
   h1 {
+    font-family: $mono-font;
     color: $header;
     font-size: 2em;
   }

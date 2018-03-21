@@ -32,6 +32,7 @@ section {
   }
 
   .container {
+    margin: 5px;
     width: 100%;
     @extend %display-flex;
     @include flex-flow(column nowrap);
@@ -44,15 +45,13 @@ section {
     .content {
       cursor: pointer;
       position: relative;
-      margin: 5px;
-      box-shadow: 0 0 2px $text-grey;
-      min-width: 45%;
-      @media only screen and (min-width: 321px) {
-        min-width: 95%;
-      }
+      margin: 5px 0;
+      box-shadow: 0 0 2px grey;
+      width: 100%;
 
       @media only screen and (min-width: 768px) {
-        margin: 10px;
+        width: 45%;
+        margin: 5px;
       }
 
       &:hover {

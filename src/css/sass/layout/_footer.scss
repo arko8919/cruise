@@ -1,40 +1,38 @@
+footer {
+  padding: 40px 20px;
+  background-color: $background;
+  @extend %display-flex;
+  @include flex-flow(column nowrap);
+  @include align-items(center);
 
-  footer {
-    padding: 40px 20px;
-    background-color: $background;
-    font-size: $standard-size;
+  .icons {
+    font-size: 3em;
     @extend %display-flex;
-    @include flex-flow(column nowrap);
+    @include flex-flow(row wrap);
     @include align-items(center);
+    @include justify-content(center);
 
-    .icons {
-      font-size: 3em;
-      @extend %display-flex;
-      @include flex-flow(row wrap);
-      @include align-items(center);
-      @include justify-content(center);
+    a {
+      color: $icons-background;
+      cursor: pointer;
+      margin: 0 5px;
+      @include transition(all .5s);
 
-      a {
-        color: $icons-background;
-        cursor: pointer;
-        margin: 0 5px;
-        @include transition(all .5s);
-
-        &:hover {
-          color: $icons-hover;
-        }
-      }
-    }
-
-    p {
-      margin-top: 30px;
-      font-size: 1em;
-      color: $textBlack;
-      text-transform: uppercase;
-      font-family: $mono-font;
-
-      span {
-        color: $black;
+      &:hover {
+        color: $icons-hover;
       }
     }
   }
+
+  p {
+    margin-top: 30px;
+    font-size: 1em;
+    color: $textBlack;
+    text-transform: uppercase;
+    font-family: $mono-font;
+
+    span {
+      color: $textBlack;
+    }
+  }
+}

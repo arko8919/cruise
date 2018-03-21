@@ -13,6 +13,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "sass": "sass --watch src/css/sass/App.scss:src/css/App.css"
+    "sass": "sass --watch src/css/sass/App.scss:src/css/App.css",
+    "deploy" : "npm run build&&gh-pages -d build"
+  },
+  "homepage": "https://arko8919.github.io/cruise.github.io",
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }
