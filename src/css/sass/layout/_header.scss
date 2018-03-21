@@ -1,0 +1,10 @@
+header {
+  background-color: $background;
+  @extend %display-flex;
+  @include justify-content(center);
+
+  h1 {
+    color: $header;
+    font-size: 2em;
+  }
+}

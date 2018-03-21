@@ -1,0 +1,79 @@
+@-webkit-keyframes arrow-pointing {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+
+  80% {
+    opacity: 1;
+    top: 50%;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes arrow-pointing {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+
+  80% {
+    opacity: 1;
+    top: 50%;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes arrow-pointing {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+
+  80% {
+    opacity: 1;
+    top: 50%;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes arrow-pointing {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+
+  80% {
+    opacity: 1;
+    top: 50%;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes arrow-pointing {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+
+  80% {
+    opacity: 1;
+    top: 50%;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

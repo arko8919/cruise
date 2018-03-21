@@ -13,3 +13,70 @@
   -webkit-justify-content: $value;
   justify-content: $value;
 }
+
+// Transition / Transform
+
+@mixin transition($value) {
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -o-transition: $value;
+  transition: $value;
+}
+
+@mixin transform($value) {
+  -webkit-transform: ($value);
+  -moz-transform: ($value);
+  -o-transform: ($value);
+  -ms-transform: ($value);
+  transform: ($value);
+}
+
+// Animations
+@mixin animation($value) {
+  -webkit-animation: $value;
+  -moz-animation: $value;
+  -o-animation: $value;
+  animation: $value;
+}
+
+@mixin animation-name($name) {
+  -webkit-animation-name: $name;
+  -moz-animation-name: $name;
+  -o-animation-name: $name;
+  animation-name: $name;
+}
+
+@mixin animation-duration($time) {
+  -webkit-animation-duration: $time;
+  -moz-animation-duration: $time;
+  -o-animation-duration: $time;
+  animation-duration: $time;
+}
+
+@mixin animation-delay($time) {
+  -webkit-animation-delay: $time;
+  -moz-animation-delay: $time;
+  -o-animation-delay: $time;
+  animation-delay: $time;
+}
+
+@mixin animation-timing-function($timing) {
+  -webkit-animation-timing-function: $timing;
+  -moz-animation-timing-function: $timing;
+  -o-animation-timing-function: $timing;
+  animation-timing-function: $timing;
+}
+
+@mixin animation-iteration-count($number) {
+  -webkit-animation-iteration-count: $number;
+  -moz-animation-iteration-count: $number;
+  -o-animation-iteration-count: $number;
+  animation-iteration-count: $number;
+}
+
+@mixin animation-fill-mode($value) {
+  -webkit-animation-fill-mode: $value;
+  -moz-animation-fill-mode: $value;
+  -o-animation-fill-mode: $value;
+  animation-fill-mode: $value;
+}
