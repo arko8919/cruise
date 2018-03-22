@@ -10,17 +10,15 @@ section .search, section, section .info, section .container, header, footer, foo
   display: flex; }
 
 section .container .content:hover .overlay {
-  opacity: 1;
-  height: 100%;
-  bottom: 0; }
+  opacity: 1; }
 section .container .content .overlay {
   font-size: .5em;
   position: absolute;
-  bottom: 100%;
+  bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
-  height: 0;
+  height: 100%;
   background-color: #ADD9F4;
   opacity: 0;
   -webkit-transition: all 0.5s;
@@ -228,14 +226,14 @@ section {
     section .container .content {
       cursor: pointer;
       position: relative;
-      margin: 5px 0;
+      margin: .5em 0;
       box-shadow: 0 0 2px grey;
       width: 100%;
       /* overlay on image */ }
       @media only screen and (min-width: 768px) {
         section .container .content {
           width: 45%;
-          margin: 5px; } }
+          margin: 0.5em 0.3em; } }
       section .container .content:hover {
         box-shadow: 1px 1px 4px #000; }
       section .container .content img {

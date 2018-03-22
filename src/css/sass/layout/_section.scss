@@ -49,13 +49,13 @@ section {
     .content {
       cursor: pointer;
       position: relative;
-      margin: 5px 0;
+      margin: .5em 0;
       box-shadow: 0 0 2px grey;
       width: 100%;
 
       @media only screen and (min-width: 768px) {
         width: 45%;
-        margin: 5px;
+        margin: 0.5em 0.3em;
       }
 
       &:hover {
