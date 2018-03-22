@@ -7,7 +7,7 @@ section .info i {
   top: 50%;
   transform: translate(-50%, -50%); }
 
-section, section .container, header, footer, footer .icons {
+section .search, section, section .container, header, footer, footer .icons {
   display: -webkit-flex;
   display: -moz-flex;
   display: -o-flex;
@@ -42,6 +42,53 @@ section .container .content .overlay {
     text-align: center; }
   section .container .content .overlay td {
     padding: 0.5em; }
+
+section .search {
+  width: 100%;
+  margin: .5em;
+  font-size: .5em;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: center;
+  align-items: center; }
+  section .search h2 {
+    margin: .5em;
+    font-size: 2em;
+    text-align: center; }
+  section .search .options select {
+    border: 1px solid #476C9B;
+    margin: 1em 0;
+    padding: .5em; }
+  section .search button {
+    border: none;
+    outline: none;
+    box-shadow: 0 0 8px #000;
+    width: 10em;
+    padding: .5em;
+    margin-bottom: 2em;
+    background-color: #E31B6D;
+    font-weight: bold;
+    font-size: 1.5em;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+    section .search button:hover {
+      cursor: pointer;
+      background-color: #ADD9F4; }
+  section .search .result {
+    border: 1px solid #476C9B;
+    width: 100%;
+    height: 20em;
+    overflow: auto; }
+    section .search .result table {
+      width: 100%; }
+    section .search .result table, section .search .result th, section .search .result td {
+      border: 1px solid #476C9B;
+      border-collapse: collapse;
+      text-align: center; }
+    section .search .result td {
+      padding: 0.5em; }
 
 @-webkit-keyframes arrow-pointing {
   0% {
@@ -94,11 +141,13 @@ section {
   -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;
   -webkit-align-items: center;
-  align-items: center; }
+  align-items: center;
+  /* search component style */ }
   section h2 {
     font-size: 1.5em; }
   section p {
-    text-align: center; }
+    text-align: center;
+    margin: .5em; }
   section .info {
     position: relative;
     height: 2em; }
@@ -137,7 +186,7 @@ section {
       margin: 5px 0;
       box-shadow: 0 0 2px grey;
       width: 100%;
-      /* Overlay on image */ }
+      /* overlay on image */ }
       @media only screen and (min-width: 768px) {
         section .container .content {
           width: 45%;
@@ -194,17 +243,20 @@ footer {
 body, header, section, footer {
   font-size: 14px;
   font-family: "Open Sans", sans-serif; }
-  @media only screen and (min-width: 321px) and (min-height: 321px) {
+  @media only screen and (min-width: 321px) and (max-height: 321px) {
     body, header, section, footer {
       font-size: 18px; } }
-  @media only screen and (min-width: 468px) and (min-height: 468px) {
+  @media only screen and (min-width: 468px) and (min-height: 321px) {
     body, header, section, footer {
       font-size: 22px; } }
-  @media only screen and (min-width: 768px) and (min-height: 768px) {
+  @media only screen and (min-width: 768px) and (min-height: 468px) {
     body, header, section, footer {
       font-size: 26px; } }
-  @media only screen and (min-width: 1224px) {
+  @media only screen and (min-width: 1224px) and (max-height: 767px) {
     body, header, section, footer {
       font-size: 30px; } }
+  @media only screen and (min-width: 1224px) and (min-height: 768px) {
+    body, header, section, footer {
+      font-size: 34px; } }
 
 /*# sourceMappingURL=App.css.map */

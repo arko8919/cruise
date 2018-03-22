@@ -2,6 +2,7 @@ import React from 'react';
 import {Table} from "./table";
 
 const cruiseLines = []; // list of cruise lines
+
 export class Content extends React.Component {
 
     createCruiseLinesList() {
@@ -29,7 +30,7 @@ export class Content extends React.Component {
                 <div className="content"
                      key={cruiseLine}
                 >
-                    <img src={require(`./cruise-line-logos/${cruiseLine}`)}
+                    <img src={require(`../../../public/cruise-line-logos/${cruiseLine}`)}
                          alt={cruiseLine}
                     />
                     <div className="overlay">

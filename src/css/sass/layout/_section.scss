@@ -1,4 +1,5 @@
 @import '../components/overlay';
+@import '../components/search';
 @import '../animations/arrow-pointing';
 
 section {
@@ -14,6 +15,7 @@ section {
 
   p {
     text-align: center;
+    margin: .5em;
   }
 
   .info {
@@ -63,8 +65,11 @@ section {
         height: 100%;
       }
 
-      /* Overlay on image */
+      /* overlay on image */
       @extend %image-overlay;
     }
   }
+
+  /* search component style */
+  @extend %search;
 }

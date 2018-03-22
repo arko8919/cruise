@@ -1,6 +1,7 @@
 import React from 'react';
 import XLSX from 'xlsx';
 import {Content} from "./content";
+import {Search} from "./search";
 
 export class Section extends React.Component {
     constructor(props) {
@@ -34,18 +35,18 @@ export class Section extends React.Component {
         req.send();
     }
 
-
     render() {
         return (
             <section>
                 <h2>Cruise Lines</h2>
-                <p>Choose you favorite cruise line to begin a journey!!!</p>
-                <div className="info">
+                <p>Choose your favorite cruise line to begin a journey!!!</p>
+                <div className="info"> {/* Icon */}
                     <i className="mdi mdi-chevron-down"> </i>
                 </div>
                 <div className="container">
-                    <Content sheet={this.state.sheet}/>
+                    <Content sheet={this.state.sheet}/> {/* this create gallery with tables */}
                 </div>
+                <Search sheet={this.state.sheet}/> {/* this create search options */}
             </section>
         )
     }

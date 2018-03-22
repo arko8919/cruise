@@ -10,7 +10,7 @@ export class Table extends React.Component {
     }
 
     componentWillMount() {
-        let tempValue = []; // temp variable which hold all trips list base on cruise line name
+        let tempValue = []; // temp variable which hold all trips
 
         for (let sheetIndex = 0; sheetIndex < this.props.sheet.length; sheetIndex++) {
             // all trips with same cruise line name are added to array
@@ -24,6 +24,7 @@ export class Table extends React.Component {
                     </tr>);
             }
         }
+
         this.setState({
             tripData: tempValue
         })
