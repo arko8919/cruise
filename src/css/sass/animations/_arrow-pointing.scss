@@ -1,12 +1,12 @@
 @-webkit-keyframes arrow-pointing {
   0% {
     opacity: 0;
-    top: 0;
+    @include transform(translate(0, 0));
   }
 
   80% {
     opacity: 1;
-    top: 50%;
+    @include transform(translate(0, -20%));
   }
 
   100% {
@@ -17,12 +17,12 @@
 @-moz-keyframes arrow-pointing {
   0% {
     opacity: 0;
-    top: 0;
+    @include transform(translate(0, 0));
   }
 
   80% {
     opacity: 1;
-    top: 50%;
+    @include transform(translate(0, -20%));
   }
 
   100% {
@@ -33,12 +33,12 @@
 @-o-keyframes arrow-pointing {
   0% {
     opacity: 0;
-    top: 0;
+    @include transform(translate(0, 0));
   }
 
   80% {
     opacity: 1;
-    top: 50%;
+    @include transform(translate(0, -20%));
   }
 
   100% {
@@ -49,12 +49,12 @@
 @-ms-keyframes arrow-pointing {
   0% {
     opacity: 0;
-    top: 0;
+    @include transform(translate(0, 0));
   }
 
   80% {
     opacity: 1;
-    top: 50%;
+    @include transform(translate(0, -20%));
   }
 
   100% {
@@ -65,12 +65,12 @@
 @keyframes arrow-pointing {
   0% {
     opacity: 0;
-    top: 0;
+    @include transform(translate(0, 0));
   }
 
   80% {
     opacity: 1;
-    top: 50%;
+    @include transform(translate(0, -20%));
   }
 
   100% {

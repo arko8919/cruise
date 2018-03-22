@@ -100,22 +100,28 @@ export class Search extends React.Component {
                 <h2>Be more specific with planning your trip !!!</h2>
                 {/*  select menu */}
                 <div className="options">
-                    <select value={this.state.cruiseLineName}
-                            onChange={this.handleChange("cruiseLineName")}>
-                        <option value="none">none</option>
-                        {cruiseLineNames.map(cruiseLineName =>
-                            <option value={cruiseLineName}
-                                    key={cruiseLineName}>{cruiseLineName}</option>
-                        )}
-                    </select>
-                    <select onChange={this.handleChange("departureDate")}
-                            value={this.state.departureDate}>
-                        <option value="none">none</option>
-                        {departureDates.map(departureDate =>
-                            <option value={departureDate}
-                                    key={departureDate}>{departureDate}</option>
-                        )}
-                    </select>
+                    <div className="option">
+                        <label>Cruise Line</label>
+                        <select value={this.state.cruiseLineName}
+                                onChange={this.handleChange("cruiseLineName")}>
+                            <option value="none">none</option>
+                            {cruiseLineNames.map(cruiseLineName =>
+                                <option value={cruiseLineName}
+                                        key={cruiseLineName}>{cruiseLineName}</option>
+                            )}
+                        </select>
+                    </div>
+                    <div className="option">
+                        <label>Departure Date</label>
+                        <select onChange={this.handleChange("departureDate")}
+                                value={this.state.departureDate}>
+                            <option value="none">none</option>
+                            {departureDates.map(departureDate =>
+                                <option value={departureDate}
+                                        key={departureDate}>{departureDate}</option>
+                            )}
+                        </select>
+                    </div>
                 </div>
                 <button onClick={this.handleClick}>Search</button>
 

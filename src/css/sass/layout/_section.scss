@@ -21,12 +21,14 @@ section {
   .info {
     position: relative;
     height: 2em;
+    @extend %display-flex;
+    @include align-items(center);
+    @include justify-content(center);
 
     i {
       position: absolute;
       font-size: 3em;
       color: $icons-background;
-      @extend %centering;
       @include animation-name(arrow-pointing);
       @include animation-duration(1s);
       @include animation-iteration-count(infinite);

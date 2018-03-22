@@ -11,7 +11,6 @@ footer {
     @include flex-flow(row wrap);
     @include align-items(center);
     @include justify-content(center);
-
     a {
       color: $icons-background;
       cursor: pointer;

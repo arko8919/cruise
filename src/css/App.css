@@ -2,12 +2,7 @@
 /* odd */
 /* Fonts */
 /* Fonts-size */
-section .info i {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); }
-
-section .search, section, section .container, header, footer, footer .icons {
+section .search, section, section .info, section .container, header, footer, footer .icons {
   display: -webkit-flex;
   display: -moz-flex;
   display: -o-flex;
@@ -52,13 +47,19 @@ section .search {
   -webkit-align-items: center;
   align-items: center; }
   section .search h2 {
-    margin: .5em;
+    margin: 2em;
     font-size: 2em;
     text-align: center; }
-  section .search .options select {
-    border: 1px solid #476C9B;
-    margin: 1em 0;
-    padding: .5em; }
+  section .search .options .option {
+    display: inline-block; }
+    section .search .options .option label {
+      display: block;
+      text-align: center;
+      font-weight: bold; }
+    section .search .options .option select {
+      border: 1px solid #476C9B;
+      margin: 1em 0;
+      padding: .5em; }
   section .search button {
     border: none;
     outline: none;
@@ -93,46 +94,86 @@ section .search {
 @-webkit-keyframes arrow-pointing {
   0% {
     opacity: 0;
-    top: 0; }
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0); }
   80% {
     opacity: 1;
-    top: 50%; }
+    -webkit-transform: translate(0, -20%);
+    -moz-transform: translate(0, -20%);
+    -o-transform: translate(0, -20%);
+    -ms-transform: translate(0, -20%);
+    transform: translate(0, -20%); }
   100% {
     opacity: 0; } }
 @-moz-keyframes arrow-pointing {
   0% {
     opacity: 0;
-    top: 0; }
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0); }
   80% {
     opacity: 1;
-    top: 50%; }
+    -webkit-transform: translate(0, -20%);
+    -moz-transform: translate(0, -20%);
+    -o-transform: translate(0, -20%);
+    -ms-transform: translate(0, -20%);
+    transform: translate(0, -20%); }
   100% {
     opacity: 0; } }
 @-o-keyframes arrow-pointing {
   0% {
     opacity: 0;
-    top: 0; }
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0); }
   80% {
     opacity: 1;
-    top: 50%; }
+    -webkit-transform: translate(0, -20%);
+    -moz-transform: translate(0, -20%);
+    -o-transform: translate(0, -20%);
+    -ms-transform: translate(0, -20%);
+    transform: translate(0, -20%); }
   100% {
     opacity: 0; } }
 @-ms-keyframes arrow-pointing {
   0% {
     opacity: 0;
-    top: 0; }
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0); }
   80% {
     opacity: 1;
-    top: 50%; }
+    -webkit-transform: translate(0, -20%);
+    -moz-transform: translate(0, -20%);
+    -o-transform: translate(0, -20%);
+    -ms-transform: translate(0, -20%);
+    transform: translate(0, -20%); }
   100% {
     opacity: 0; } }
 @keyframes arrow-pointing {
   0% {
     opacity: 0;
-    top: 0; }
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0); }
   80% {
     opacity: 1;
-    top: 50%; }
+    -webkit-transform: translate(0, -20%);
+    -moz-transform: translate(0, -20%);
+    -o-transform: translate(0, -20%);
+    -ms-transform: translate(0, -20%);
+    transform: translate(0, -20%); }
   100% {
     opacity: 0; } }
 section {
@@ -150,7 +191,11 @@ section {
     margin: .5em; }
   section .info {
     position: relative;
-    height: 2em; }
+    height: 2em;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
     section .info i {
       position: absolute;
       font-size: 3em;

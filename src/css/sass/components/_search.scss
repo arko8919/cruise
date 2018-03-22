@@ -8,16 +8,26 @@
     @include align-items(center);
 
     h2 {
-      margin: .5em;
+      margin: 2em;
       font-size: 2em;
       text-align: center;
     }
 
     .options {
-      select {
-        border: 1px solid $table-border;
-        margin: 1em 0;
-        padding: .5em;
+      .option {
+        display: inline-block;
+
+        label {
+          display: block;
+          text-align: center;
+          font-weight: bold;
+        }
+
+        select {
+          border: 1px solid $table-border;
+          margin: 1em 0;
+          padding: .5em;
+        }
       }
     }
 
